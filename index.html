@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Dia 08</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-image: url('1000546880.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); 
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* Botão de Música */
+        .music-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            padding: 12px 28px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Georgia', serif;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .music-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        /* Caixas de Texto com Efeito de Vidro */
+        .container {
+            max-width: 750px;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: normal;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-style: italic;
+            color: #d4d4d4;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .assinatura {
+            text-align: right;
+            margin-top: 40px;
+            font-style: italic;
+            font-size: 1.3em;
+        }
+
+        /* Galeria de Fotos Aprimorada */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.8);
+            border-color: rgba(255, 255, 255, 0.8);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        
+        <!-- Botão de Música -->
+        <button id="playButton" class="music-btn">
+            🎵 Dar play no nosso amor
+        </button>
+
+        <!-- Player do YouTube (Invisível) -->
+        <div id="player" style="display: none;"></div>
+
+        <!-- Seção da Carta de Amor -->
+        <div class="container">
+            <h1>Nosso dia 08</h1>
+            <h2>7 meses construindo a nossa história</h2>
+            
+            <p>Meu amor, hoje é dia 08, uma data muito especial para nós, e com uma carga emocional muito grande para mim. Ainda lembro do nervosismo, da ansiedade antes de dormir e ao acordar todo dia, de ficar minutos olhando a aliança e imaginar ela em sua mão.</p>
+            
+            <p>Lembro como me acalmou te ver descer do prédio usando seu vestido rosa com as unhas pintadas de rosa claro, da sua sapatilha? Eu não sei o nome kksksks mas fica muito bonito. Lembro do penteado do seu cabelo e lembro de querer tirar na hora a sua aliança de formatura, porque aquele dedo anelar, na minha cabeça, não iria dividir espaço com outra aliança além da nossa.</p>
+            
+            <p>Hoje fazem 7 meses de muito amor, muito carinho e de um laço lindo e forte. E cada dia que passa tenho mais certeza de onde estou e digo mais feliz: de ter a possibilidade, em um futuro não distante, de colocar outra aliança no seu anelar, uma mais especial.</p>
+            
+            <p class="assinatura">Eu te amo, meu amor.<br><br>Com todo o meu amor,<br>João Vitor de Lima Aguiar</p>
+        </div>
+
+        <!-- Seção das Fotos -->
+        <div class="container">
+            <h2>Alguns dos Nossos Momentos</h2>
+            <div class="gallery">
+                <!-- Imagens adicionadas conforme você enviou -->
+                <img src="1000546909.jpg" alt="Nosso Momento 1">
+                <img src="1000546895.jpg" alt="Nosso Momento 2">
+                <img src="1000546894.jpg" alt="Nosso Momento 3">
+                <img src="1000546889.jpg" alt="Nosso Momento 4">
+                <img src="1000546890.jpg" alt="Nosso Momento 5">
+                <img src="1000546893.jpg" alt="Nosso Momento 6">
+                <img src="1000546886.jpg" alt="Nosso Momento 7">
+                <img src="1000546885.jpg" alt="Nosso Momento 8">
+                <img src="1000546884.jpg" alt="Nosso Momento 9">
+                <img src="1000546883.jpg" alt="Nosso Momento 10">
+            </div>
+        </div>
+    </div>
+
+    <!-- Script da Música -->
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'MqazV4hbu8E', 
+                playerVars: {
+                    'autoplay': 0,
+                    'controls': 0
+                }
+            });
+        }
+
+        document.getElementById('playButton').addEventListener('click', function() {
+            if(player && player.getPlayerState) {
+                if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+                    player.pauseVideo();
+                    this.innerHTML = "🎵 Dar play no nosso amor";
+                } else {
+                    player.playVideo();
+                    this.innerHTML = "⏸️ Pausar música";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
